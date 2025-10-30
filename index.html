@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shah.Md.Mafidur Hasan</title>
+  <link rel="shortcut icon" href="assets/images/icon.png" type="image/x-icon">
+
+  <!-- Fonts: Montserrat (headings) + Roboto (body) -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Roboto:wght@300;400;500;700&display=swap"
+    rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkfAm9P1Z3QWoij4RSjoGgYd1Q0pD1R6V0w8AV/QXpskZlMKa6C1d9rsw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- AOS (Animate On Scroll) -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+
+  <!-- Tailwind (compiled by your watcher) -->
+  <link rel="stylesheet" href="css/output.css" />
+</head>
+
+<body id="top"
+  class="min-h-screen bg-[linear-gradient(135deg,#2c6cbc_0%,#71c3f7_50%,#f6f6f6_100%)] dark:bg-[linear-gradient(135deg,#0e1c26_0%,#2a454b_50%,#294861_100%)] text-slate-800 dark:text-slate-100 selection:bg-sky-300/40 dark:selection:bg-sky-500/30">
+  <!-- ===== Header / Nav ===== -->
+  <header
+    class="sticky top-0 z-50 backdrop-blur bg-white/50 dark:bg-slate-900/40 border-b border-black/5 dark:border-white/10">
+    <div class="mx-auto max-w-6xl px-4">
+      <div class="flex items-center justify-between py-3">
+        <a href="#top" class="font-semibold tracking-tight text-lg md:text-xl">
+          <span class="bg-clip-text text-transparent bg-gradient-to-r from-sky-600 via-indigo-600 to-fuchsia-600">
+            Shah.Md.Mafidur Hasan
+          </span>
+        </a>
+
+        <nav class="hidden md:flex items-center gap-6 text-sm">
+          <a href="#about" class="nav-link hover:text-sky-700">About</a>
+          <a href="#skills" class="nav-link hover:text-sky-700">Skills</a>
+          <a href="#education" class="nav-link hover:text-sky-700">Education</a>
+          <a href="#publications" class="nav-link hover:text-sky-700">Publications</a>
+          <a href="#contact" class="nav-link hover:text-sky-700">Contact</a>
+          <button id="themeToggle"
+            class="ml-2 inline-flex items-center gap-2 rounded-full border border-black/10 dark:border-white/10 px-3 py-1.5 hover:bg-black/5 dark:hover:bg-white/5 transition"
+            aria-label="Toggle dark mode" title="Toggle dark mode">
+            <i class="fa-solid fa-moon dark:hidden"></i>
+            <i class="fa-solid fa-sun hidden dark:inline"></i>
+            <span class="hidden sm:inline">Theme</span>
+          </button>
+        </nav>
+
+        <button id="hamburger"
+          class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-lg hover:bg-black/5 dark:hover:bg-white/10"
+          aria-label="Open menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobileMenu" class="hidden md:hidden pb-4">
+        <nav class="flex flex-col gap-3 text-sm">
+          <a href="#about" class="nav-link py-1.5">About</a>
+          <a href="#skills" class="nav-link py-1.5">Skills</a>
+          <a href="#education" class="nav-link py-1.5">Education</a>
+          <a href="#publications" class="nav-link py-1.5">Publications</a>
+          <a href="#contact" class="nav-link py-1.5">Contact</a>
+          <button id="themeToggleMobile"
+            class="mt-2 inline-flex items-center gap-2 rounded-full border border-black/10 dark:border-white/10 px-3 py-1.5 w-max hover:bg-black/5 dark:hover:bg-white/5 transition">
+            <i class="fa-solid fa-moon dark:hidden"></i>
+            <i class="fa-solid fa-sun hidden dark:inline"></i>
+            Theme
+          </button>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== Hero ===== -->
+  <section id="hero" class="relative overflow-hidden">
+    <div class="mx-auto max-w-6xl px-4 py-16 md:py-24 grid md:grid-cols-2 gap-10 items-center">
+      <div data-aos="fade-right">
+
+        <h1 class="text-4xl md:text-5xl font-extrabold leading-tight font-[Montserrat]">
+          Shah.Md.Mafidur Hasan
+        </h1>
+        <p class="mt-5 text-lg text-slate-700/90 dark:text-slate-200/90">
+          "Professional Web-developer"
+        </p>
+
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a href="#contact"
+            class="inline-flex items-center gap-2 rounded-xl px-5 py-3 text-white bg-gradient-to-r from-sky-600 via-indigo-600 to-fuchsia-600 shadow-lg shadow-indigo-600/20 hover:scale-[1.02] active:scale-[.99] transition">Contact
+            Me <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="#education"
+            class="inline-flex items-center gap-2 rounded-xl px-5 py-3 border border-black/10 dark:border-white/10 hover:bg-black/5 dark:hover:bg-white/10 transition">See
+            Education</a>
+        </div>
+      </div>
+
+      <div class="flex justify-center" data-aos="fade-left">
+        <!-- NOTE: replace with your actual image path + extension -->
+        <img src="img/WhatsApp Image 2025-10-28 at 9.58.55 PM.jpeg" alt="Profile photo of Shah.Md.Mafidur Hasan"
+          class="w-56 h-56 md:w-72 md:h-72 rounded-3xl object-cover ring-4 ring-white/50 dark:ring-slate-800/60 shadow-2xl" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== About ===== -->
+  <section id="about" class="py-16 md:py-24">
+    <div class="mx-auto max-w-6xl px-4 grid md:grid-cols-3 gap-10 items-start">
+      <div class="md:col-span-1" data-aos="fade-up">
+        <h2 class="section-title">About Me</h2>
+      </div>
+      <div class="md:col-span-2 space-y-4 leading-relaxed text-slate-700 dark:text-slate-200" data-aos="fade-up"
+        data-aos-delay="100">
+        <p>
+          "I am a passionate learner in Full-Stack Web Development, currently focusing on Python and Django to build
+          efficient and scalable backend systems. Alongside backend development, I am exploring frontend technologies to
+          strengthen my skills as a complete developer. I enjoy solving problems, writing clean and maintainable code,
+          and continuously improving myself to grow as a professional developer."
+
+        </p>
+
+        <ul class="mt-6 grid sm:grid-cols-2 gap-3">
+          <li class="goal-bullet">Integrate software development and technical expertise in academic and organizational
+            projects.
+          </li>
+          <li class="goal-bullet">Gain experience in project coordination, research support, and technology-driven
+            solutions.
+            development.</li>
+          <li class="goal-bullet">Contribute using programming, problem-solving, and collaborative skills.</li>
+          <li class="goal-bullet">Expand proficiency in emerging technologies, data analysis, and AI/ML for innovation
+            and efficiency.</li>
+          <li class="goal-bullet">Bridge technical innovation with organizational and project excellence.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Skills ===== -->
+  <section id="skills" class="py-16 md:py-24">
+    <div class="mx-auto max-w-6xl px-4">
+      <h2 class="section-title" data-aos="fade-up">Skills</h2>
+
+      <!-- Technical -->
+      <div class="mt-8 grid md:grid-cols-2 gap-8">
+        <div class="card" data-aos="fade-up">
+          <h3 class="card-title"><i class="fa-solid fa-laptop-code mr-2"></i> Technical</h3>
+          <div class="mt-4 space-y-4">
+            <!-- Progress item -->
+            <div>
+              <div class="flex justify-between text-sm mb-1">
+                <span>Python Programming</span><span>90%</span>
+              </div>
+              <div class="progress">
+                <span style="width:70%"></span>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between text-sm mb-1">
+                <span>Microsoft Office Suite</span><span>70%</span>
+              </div>
+              <div class="progress">
+                <span style="width:90%"></span>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between text-sm mb-1">
+                <span>Canva (Content & Presentation)</span><span>80%</span>
+              </div>
+              <div class="progress">
+                <span style="width:88%"></span>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between text-sm mb-1">
+                <span>HTML & CSS</span><span>90%</span>
+              </div>
+              <div class="progress">
+                <span style="width:70%"></span>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between text-sm mb-1">
+                <span>UI/UX</span><span>70%</span>
+              </div>
+              <div class="progress">
+                <span style="width:90%"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Soft + Tools -->
+        <div class="card" data-aos="fade-up" data-aos-delay="100">
+          <h3 class="card-title"><i class="fa-regular fa-handshake mr-2"></i> Soft Skills</h3>
+          <ul class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <li class="pill">Communication & Interpersonal</li>
+            <li class="pill">Analytical Thinking</li>
+            <li class="pill">Time Management</li>
+            <li class="pill">Adaptability</li>
+            <li class="pill">Problem-solving & Critical Thinking</li>
+            <li class="pill">Adaptability & Continuous Learning</li>
+            <li class="pill">Teamwork & Collaboration</li>
+          </ul>
+
+          <h3 class="card-title mt-8"><i class="fa-solid fa-toolbox mr-2"></i> Tools & Platforms</h3>
+          <ul class="mt-4 flex flex-wrap gap-2">
+            <li class="pill">Microsoft Office</li>
+            <li class="pill">Canva</li>
+            <li class="pill">Zoom / Google Meet / MS Teams</li>
+            <li class="pill">Figma</li>
+            <li class="pill">Git / GitHub</li>
+            <li class="pill">VS Code</li>
+            <li class="pill">Google Colab</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Education ===== -->
+  <section id="education" class="py-16 md:py-24">
+    <div class="mx-auto max-w-6xl px-4">
+      <h2 class="section-title" data-aos="fade-up">Education</h2>
+
+      <ol class="mt-8 relative border-s border-black/10 dark:border-white/10 ms-4">
+        <li class="timeline" data-aos="fade-up">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <h3 class="font-semibold">Bachelor of Science (BSc) in Computer Science & Engineering</h3>
+            <p class="text-sm text-slate-600 dark:text-slate-300">"Graduate of the Department of Computer Science and
+              Engineering, Daffodil International University."</p>
+          </div>
+        </li>
+
+        <li class="timeline" data-aos="fade-up" data-aos-delay="100">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <h3 class="font-semibold">Higher Secondary Certificate (HSC) — Science</h3>
+            <p class="text-sm text-slate-600 dark:text-slate-300">
+              Burail Model school and college— Jan 2018 – Jan 2019<br />
+              GPA: 4.75/ 5.00 • Passing Year: 2019
+            </p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ===== Publications ===== -->
+  <section id="publications" class="py-16 md:py-24">
+    <div class="mx-auto max-w-6xl px-4">
+      <h2 class="section-title" data-aos="fade-up">Publications</h2>
+
+      <div class="mt-8 space-y-6">
+        <div class="card" data-aos="fade-up">
+          <h3 class="card-title"><i class="fa-solid fa-book mr-2"></i> Research Papers</h3>
+          <ul class="mt-4 space-y-4">
+            <li class="publication-item">
+              <h4 class="font-semibold text-slate-800 dark:text-slate-100">Deep Learning in Agricultural Health:
+                Evaluating Model Performance for Plant Disease Detection.</h4>
+              <p class="text-sm text-slate-600 dark:text-slate-300 mt-1">Published on ResearchGate</p>
+              <a href="https://www.researchgate.net/publication/394021595_Deep_Learning_in_Agricultural_Health_Evaluating_Model_Performance_for_Plant_Disease_Detection"
+                target="_blank" rel="noreferrer" class="link text-sm">Read More <i
+                  class="fa-solid fa-external-link-alt ml-1"></i></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="card" data-aos="fade-up" data-aos-delay="100">
+          <h3 class="card-title"><i class="fa-solid fa-database mr-2"></i> Datasets</h3>
+          <ul class="mt-4 space-y-4">
+            <li class="publication-item">
+              <h4 class="font-semibold text-slate-800 dark:text-slate-100">A Multifaceted Approach to Gender Bias
+                Detection in Bengali.</h4>
+              <p class="text-sm text-slate-600 dark:text-slate-300 mt-1">Available on Mendeley Data</p>
+              <a href="https://data.mendeley.com/datasets/dj3745p2cy/1" target="_blank" rel="noreferrer"
+                class="link text-sm">Access Dataset <i class="fa-solid fa-external-link-alt ml-1"></i></a>
+            </li>
+            <li class="publication-item">
+              <h4 class="font-semibold text-slate-800 dark:text-slate-100">Comprehensive Hematological and Clinical
+                Profiles Related to Blood Cancer in Bangladesh: A Multivariate Dataset for Epidemiological and Clinical
+                Research Applications.</h4>
+              <p class="text-sm text-slate-600 dark:text-slate-300 mt-1">Available on Mendeley Data</p>
+              <a href="https://data.mendeley.com/datasets/d3vs7sbpt2/1" target="_blank" rel="noreferrer"
+                class="link text-sm">Access Dataset <i class="fa-solid fa-external-link-alt ml-1"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Contact ===== -->
+  <section id="contact" class="py-16 md:py-24">
+    <div class="mx-auto max-w-6xl px-4">
+      <h2 class="section-title" data-aos="fade-up">Contact</h2>
+
+      <div class="mt-8 grid md:grid-cols-2 gap-8">
+        <!-- LEFT: Form (Formspree) -->
+        <form class="card space-y-4" action="https://formspree.io/f/mpwjkgbw" method="POST" data-aos="fade-right">
+          <div>
+            <label class="form-label" for="name">Name</label>
+            <input class="form-input" id="name" name="name" type="text" placeholder="Your name" required />
+          </div>
+          <div>
+            <label class="form-label" for="email">Email</label>
+            <input class="form-input" id="email" name="_replyto" type="email" placeholder="you@example.com" required />
+          </div>
+          <div>
+            <label class="form-label" for="message">Message</label>
+            <textarea class="form-input min-h-[120px]" id="message" name="message" placeholder="Write your message..."
+              required></textarea>
+          </div>
+
+          <!-- optional: honey-pot to reduce spam -->
+          <input type="text" name="_gotcha" class="hidden" aria-hidden="true" />
+
+          <!-- optional: redirect after submit -->
+          <!-- <input type="hidden" name="_next" value="https://YOUR-SITE/thank-you.html" /> -->
+
+          <button type="submit" class="btn-primary">Send Message</button>
+        </form>
+
+        <!-- RIGHT: Sidebar cards (NO inputs here) -->
+        <div class="space-y-4" data-aos="fade-left">
+          <div class="card">
+            <h3 class="card-title">Links</h3>
+            <ul class="mt-3 space-y-2 text-sm">
+              <li class="flex items-center gap-3">
+                <i class="fa-solid fa-location-dot w-5"></i>
+                Dhaka,Bangladesh.
+              </li>
+              <li class="flex items-center gap-3">
+                <i class="fa-brands fa-github w-5"></i>
+                <a class="link" href="https://github.com/Mafidur1999" target="_blank" rel="noreferrer">
+                  github.com/Mafidur1999
+                </a>
+              </li>
+              <li class="flex items-center gap-3">
+                <i class="fa-brands fa-linkedin w-5"></i>
+                <a class="link" href="https://www.linkedin.com/in/mafidur-hasan/" target="_blank" rel="noreferrer">
+                  linkedin.com/in/mafidur-hasan
+                </a>
+              </li>
+
+          </div>
+
+          <div class="card">
+            <h3 class="card-title">Availability</h3>
+            <p class="text-sm text-slate-700 dark:text-slate-300">
+              "Open to opportunities that leverage programming, system design, data-driven solutions, and collaborative
+              project development."
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===== Footer ===== -->
+  <footer class="py-10 border-t border-black/10 dark:border-white/10">
+    <div class="mx-auto max-w-6xl px-4 flex flex-col md:flex-row items-center justify-between gap-4">
+      <p class="text-sm">&copy; <span id="year"></span> Shah.Md. Mafidur hasan All rights reserved.</p>
+      <div class="flex items-center gap-4 text-sm">
+        <a href="#top" class="link flex items-center gap-1"><i class="fa-solid fa-arrow-up"></i> Back to top</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- AOS + App JS -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="js/script.js" defer></script>
+</body>
+
+</html>
